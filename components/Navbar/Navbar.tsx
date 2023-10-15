@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 
 const Navbar = () => {
 	return (
-		<nav className='flexBetween max-container padding-container relative z-30 py-5 bg-slate-200'>
+		<nav className='flexBetween max-container padding-container relative z-30 py-5 bg-slate-200 bg-transparent'>
 			<Link href='/'>
 				<Image src='/hilink-logo.svg' alt='logo' width={74} height={29} />
 			</Link>
@@ -15,7 +15,7 @@ const Navbar = () => {
 					<Link
 						href={href}
 						key={key}
-						className='regular-16 text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold'
+						className='regular-16 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold'
 					>
 						{label}
 					</Link>
